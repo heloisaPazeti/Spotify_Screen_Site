@@ -5,8 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Spotify</title>
 
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./src/styles/reset.css">
+        <link rel="stylesheet" href="./src/styles/vars.css">
+        <link rel="stylesheet" href="./src/styles/sidebar_footer.css">
+        <link rel="stylesheet" href="./src/styles/main_content.css">
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
         integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
@@ -17,9 +19,39 @@
 
     </head>
     <body>
+
+        <main>
+            <div class="main_container">
+                <nav class="header_navigation">
+                    <div class="navigation">
+                        <button class="arrow_left"><img src="./src/Assets/Icons/small-left.png" alt="Left Arrow"></button>
+                        <button class="arrow_right"><img src="./src/Assets/Icons/small-right.png" alt="Right Arrow"></button>
+                        
+                    </div>
+                    <div class="header_search">
+                        <img src="./src/Assets/Icons/search.png" alt="">
+                        <input id="search_input" type="text" maxlength="800" placeholder="O que você quer ouvir?" />
+                    </div>
+                    <div class="header_login">
+                            <button class="subscribe">Inscreva-se</button>
+                            <button class="login">Entrar</button>
+                    </div>
+                </nav>
+
+                <div class="title_container">
+                    <span class="text title">Boa Tarde</span>
+                    <span class="text subtitle">Navegar por todas as seções</span>
+                </div>
+            </div>
+        </main>
+
+        
+
+
+
         <div class="sidebar">
             <nav class="sidebar_navigation">
-                <div class="logo"><a href=""><img src="Assets/Icons/logo-spotify.png" alt="Logo Spotify"></a></div>
+                <div class="logo"><a href=""><img src="./src/Assets/Icons/logo-spotify.png" alt="Logo Spotify"></a></div>
                 <div>
                     <ul>
                         <li><a href=""><span class="fa fa-home"></span><span> Início</span></a></li>
@@ -57,6 +89,10 @@
                     </button>
                 </div>
         </div>
+
+       
+
+
 
         <footer>
 
