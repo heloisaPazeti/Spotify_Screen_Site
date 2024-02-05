@@ -31,7 +31,7 @@ document.addEventListener('input', function() {
     if(searchTerm === '')
     {
         resultPlaylist.classList.add('hidden');
-        resultArtist.classList.remove('hidder');
+        resultArtist.classList.remove('hidden');
 
         return;
     }
